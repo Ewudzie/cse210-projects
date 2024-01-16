@@ -1,4 +1,6 @@
 using System;
+using System.Drawing;
+using System.Reflection.Metadata;
 
 class Program
 {
@@ -6,6 +8,9 @@ class Program
     {
         Console.WriteLine("Hello Sandbox World!");
         Console.WriteLine("This is Edwin Ewudzie");
-      
+
+        Console.Write("What is your faviorte color: ");
+        string Color = Console.ReadLine();
+        Console.WriteLine($"Your favorite color is: {Color}" );
     }
 }
