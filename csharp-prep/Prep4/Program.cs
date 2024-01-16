@@ -49,7 +49,7 @@ class Program
                 }
             }
 
-            Console.WriteLine($"The maximum number in the list is: {max}");
+        Console.WriteLine($"The maximum number in the list is: {max}");
 
 
            
