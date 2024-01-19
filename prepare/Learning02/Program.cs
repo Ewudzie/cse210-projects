@@ -26,6 +26,8 @@ class Program
         myResume._name = "Edwin Ewudzie";
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
+
+        myResume.DisplayResumeDetails();
        
 
     
