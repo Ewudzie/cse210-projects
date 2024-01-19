@@ -21,6 +21,11 @@ class Program
 
         job1.DisplayJobDetails();
         job2.DisplayJobDetails();
+
+        Resume myResume = new Resume();
+        myResume._name = "Edwin Ewudzie";
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
        
 
     
