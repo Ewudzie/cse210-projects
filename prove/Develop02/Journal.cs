@@ -13,7 +13,7 @@ public class Journal
     }
 
         // Creating methods for the Journal class entry
-        public void AddEntry()
+        public void AddEntry( Entry newEntry)
         {
 
         }
