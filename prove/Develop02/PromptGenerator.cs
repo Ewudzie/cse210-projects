@@ -15,7 +15,7 @@ public class PropmtGenerator
         // A method the will generate prompt questions randomly for a user
         public string GetRandomPrompt()
         {
-            
+            return "";
 
         }
 }
