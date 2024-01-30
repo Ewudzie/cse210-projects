@@ -8,6 +8,9 @@ public class Scripture
     public Scripture(Reference reference, string text)
     {
         _reference = reference;
+        reference.SetBook("John");
+        reference.SetChapter(3);
+        reference.SeVerse(16);
         _words = text;
 
     }

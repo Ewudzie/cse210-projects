@@ -48,7 +48,7 @@ public class Reference
         }
         public void SetEndVerse(int endVerse)
         {
-            _endVerse = endVerse
+            _endVerse = endVerse;
         }
 
 }
