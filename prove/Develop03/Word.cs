@@ -13,7 +13,7 @@ public class Word
 
         public void Hide ()
         {
-           
+           _isHidden = true;
 
         }
         public void Show()
@@ -24,7 +24,7 @@ public class Word
         }
         public bool IsHidden()
         {
-             bool yes = _isHidden;
+            return  _isHidden;
 
         }
         public string GetDisplayText()

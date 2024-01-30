@@ -11,7 +11,15 @@ public class Scripture
         reference.SetBook("John");
         reference.SetChapter(3);
         reference.SeVerse(16);
-        _words = text;
+        //_words = text;
+
+        String [] parts = text.Split(" ");
+        for (int i =0; i < parts.Length; i++)
+         {
+            Word word = new Word(parts[i]);
+            _words.Add(word);
+         }
+       
 
     }
         public void HideRandomWords(int numberToHide)
