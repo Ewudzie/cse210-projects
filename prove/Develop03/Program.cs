@@ -6,6 +6,13 @@ class Program
     {
         Console.WriteLine("Hello Develop03 World!");
 
+        Scripture scriptureRef = new Scripture();
+        scriptureRef.
+
+
+
+
+       
         
     }
-}
+}    
