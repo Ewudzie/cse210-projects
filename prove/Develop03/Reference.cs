@@ -36,7 +36,7 @@ public class Reference
         {
             _chapter = chapter;
         }
-        public void SeVerse(int verse)
+        public void SetVerse(int verse)
         {
             _verse = verse;
         }

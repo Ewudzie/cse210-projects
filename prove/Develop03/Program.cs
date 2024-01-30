@@ -13,7 +13,7 @@ class Program
     
         Scripture scriptureRef = new Scripture(referencescript, text);
        
-        Console.WriteLine(scriptureRef.GetDisplayText());
+        Console.WriteLine($"{referencescript.SetBook} {referencescript.SetChapter}:{referencescript.SetVerse} {text}");
 
         
         
