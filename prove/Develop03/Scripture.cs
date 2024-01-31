@@ -10,7 +10,7 @@ public class Scripture
         _reference = reference;
         reference.SetBook("John");
         reference.SetChapter(3);
-        reference.SeVerse(16);
+        reference.SetVerse(16);
         //_words = text;
 
         String [] parts = text.Split(" ");

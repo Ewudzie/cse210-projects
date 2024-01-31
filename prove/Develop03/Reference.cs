@@ -25,7 +25,11 @@ public class Reference
 
         public string GetDisplayText()
         {
-            return "";
+            string book = _book;
+            string chapter = _chapter.ToString();
+            string verse = _verse.ToString();
+
+            return $"{book} {chapter}:{verse}";
         }
 
         public void SetBook(string book)

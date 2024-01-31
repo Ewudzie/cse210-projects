@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Concurrent;
 
 class Program
 {
@@ -8,12 +9,14 @@ class Program
 
 
         Reference referencescript = new Reference("John", 3, 16);
-        string text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have heverlasting life.";
+        string text = "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
+        //string book = referencescript.SetBook(b);
+        //int chapter = referencescript.SetChapter();
         
     
         Scripture scriptureRef = new Scripture(referencescript, text);
        
-        Console.WriteLine($"{referencescript.SetBook} {referencescript.SetChapter}:{referencescript.SetVerse} {text}");
+        Console.WriteLine($"{referencescript.GetDisplayText()}: {text}");
 
         
         
