@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Concurrent;
+using System.Reflection.Metadata;
 
 class Program
 {
@@ -17,6 +18,25 @@ class Program
         Scripture scriptureRef = new Scripture(referencescript, text);
        
         Console.WriteLine($"{referencescript.GetDisplayText()}: {text}");
+        Console.WriteLine();
+
+        Console.Write("Press Enter to continue or type 'quit' to finish. ");
+        string userEnter =  Console.ReadLine();
+        //string userQuit = "quit";
+
+
+       if (userEnter == Console.ReadLine())
+        {
+            Console.Clear();
+            Console.WriteLine("___");
+
+        }
+        else 
+        {
+            Console.Write("Thank you playing the scripture memory game.");
+        }
+
+        
 
         
         
