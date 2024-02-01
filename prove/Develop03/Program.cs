@@ -27,6 +27,16 @@ class Program
         string userEnter =  Console.ReadLine();
         //string userQuit = "";
 
+       /* while(userEnter != "quit")
+        {
+            int countHideWord = 0;
+            int totalCount =+ countHideWord; 
+            Console.WriteLine("___");
+            Console.WriteLine($"{text1.Length}");
+            Console.Clear();
+
+        }*/
+
 
        if (userEnter == Console.ReadLine())
         {
