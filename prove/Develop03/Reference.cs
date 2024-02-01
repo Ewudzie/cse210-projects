@@ -28,6 +28,7 @@ public class Reference
             string book = _book;
             string chapter = _chapter.ToString();
             string verse = _verse.ToString();
+            string endVerse = _endVerse.ToString();
 
             return $"{book} {chapter}:{verse}";
         }
