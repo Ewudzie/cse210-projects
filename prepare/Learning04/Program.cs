@@ -6,6 +6,9 @@ class Program
     {
         Console.WriteLine("Hello Learning04 World!");
 
-        MathAssignment
+        Assignment assignment = new Assignment("Edwin Ewudzie", "Mathematics");
+        //assignment.GetSummary();
+
+        Console.WriteLine(assignment.GetSummary());
     }
 }
