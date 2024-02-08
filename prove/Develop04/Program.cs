@@ -26,6 +26,16 @@ class Program
             int seconds = int.Parse(secondsInput);
             if(seconds != 0)
             {
+                //intantiating a Breathing class
+
+
+                 for (int i = 5; i > 0; i--)
+                {
+                    Console.WriteLine(i);
+                    Thread.Sleep(3000);
+                    Console.WriteLine("\b \b");
+
+                }
 
             }
 
@@ -39,21 +49,14 @@ class Program
         else if(choice == "2")
         {
             ReflectionActivity reflectionActivity = new ReflectionActivity();
-
+            reflectionActivity.SetName("Reflective Activity");
+            reflectionActivity.SetDescription("This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.");
+            
         }
 
 
 
-        //intantiating a Breathing class
-
-
-       /* for (int i = 5; i > 0; i--)
-        {
-            Console.WriteLine(i);
-            Thread.Sleep(3000);
-            Console.WriteLine("\b \b");
-
-        }*/
+        
         
 
 
