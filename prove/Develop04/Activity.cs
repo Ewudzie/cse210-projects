@@ -2,13 +2,19 @@ using System;
 
 public class Activity
 {
-    private string _name;
-    private string _description;
+    protected string _name;
+    protected string _description;
     private int _duration;
 
     public Activity ()
     {
         
+    }
+    public Activity(string name, string description)
+    {
+        _name = name;
+        _description = description;
+
     }
 
     public Activity(string name, string description, int duration)
@@ -20,12 +26,14 @@ public class Activity
 
         public void DisplayStartingMessage(string name, string description, int duration)
         {
-            //string fullDisplay = name + " " + description + " " + duration.ToString();
+            _name = name;
+            _description = description;
+            _duration = duration;
         }
 
         public void DisplayEndMessage()
         {
-            
+            string endMessage = "Well Done!";
         }
 
         public void ShowSpinner(int numberOfSeconds)
@@ -47,6 +55,12 @@ public class Activity
         {
             return $"{_description}";
         }
+
+        public int GetDuration()
+        {
+            
+           return _duration;
+        }
         
 
         public void SetName(string name)
@@ -56,6 +70,10 @@ public class Activity
         public void SetDescription(string description)
         {
             _description = description;
+        }
+        public void SetDuration(int duration)
+        {
+            _duration = duration;
         }
 
 
