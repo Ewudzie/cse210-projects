@@ -4,6 +4,11 @@ public class ListingActivity:Activity
 {  
     private int _count;
     private List<string> _prompt = new List<string>();
+    //constructor
+    public ListingActivity()
+    {
+                
+    }
 
 
 
