@@ -44,7 +44,7 @@ class Program
                 }*/
                 //spining
                 // |/-\|/-\
-                Console.Write("Breath in");
+                Console.Write("Breath");
                 List<string> animationstring = new List<string>();
                 animationstring.Add("|");
                 animationstring.Add("/");
@@ -57,11 +57,12 @@ class Program
                 foreach (string s in animationstring)
                 {
                     
-                    Console.WriteLine();
-                    Console.WriteLine("Out");
+                    Console.WriteLine(" in");
+                  
                     Console.Write(s);
                 
                     Thread.Sleep(2000);
+                    Console.WriteLine("Out");
 
                     Console.Write("\b \b");
 
@@ -122,7 +123,11 @@ class Program
                 Console.WriteLine();
                 Console.WriteLine("Consider the following prompt: ");
                 Console.WriteLine();
-                Console.WriteLine();
+                Console.Write("Think of a time when you did something really difficult.");
+                string userinput1 = Console.ReadLine();
+                Console.Write("Why was this experience meaningful to you? ");
+                string userinput2 = Console.ReadLine();
+
 
             }
         }
@@ -150,7 +155,7 @@ class Program
             Console.WriteLine("Thank you, Play again next time");
         }
             
-        
+        Console.WriteLine();
 
         Console.WriteLine("Done");
     }
