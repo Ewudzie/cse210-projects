@@ -1,13 +1,18 @@
 using System;
 using System.Reflection.Metadata.Ecma335;
 
-public class Shape
+public abstract class Shape
 {
-    private string _color;
+    protected string _color;
+    public Shape(string color)
+    {
+        _color = color;
+
+    }
 
         public string GetColor()
         {
-            return "";
+            return _color;
         }
 
         public void SetColor(string color)
@@ -15,8 +20,5 @@ public class Shape
             _color = color;
         }
 
-        public virtual double GetArea()
-        {
-            return 1;
-        }
+        public abstract double GetArea();
 }
