@@ -24,6 +24,7 @@ public class GoalManager
 
     public void Start()
     {
+        Console.Write("Welcome To Enternal Quest Game ");
 
     }
     public void DisplayPlayerInfo(string playerInfo)
