@@ -29,10 +29,10 @@ class Program
                 Console.Write("What is the name of your goal? ");
                 string userNameInput1 = Console.ReadLine();
                 Console.Write("What is a short description of it? ");
-                string userDesInput = Console.ReadLine();
+                string userDesInput1 = Console.ReadLine();
                 Console.Write("How many points is associated to this goal? " );
-                string userPoints = Console.ReadLine();
-                int points = int.Parse(userPoints);
+                string userPoints1 = Console.ReadLine();
+                int points1 = int.Parse(userPoints1);
 
 
 
@@ -42,12 +42,12 @@ class Program
                     EternalGoal eternalGoal = new EternalGoal("study the scrptures", "to be focused", "50");
                     eternalGoal.SetShortName("");
                     Console.Write("What is the name of your goal? ");
-                    string userNameInput1 = Console.ReadLine();
+                    string userNameInput2 = Console.ReadLine();
                     Console.Write("What is a short description of it? ");
-                    string userDesInput = Console.ReadLine();
+                    string userDesInput2 = Console.ReadLine();
                     Console.Write("How many points is associated to this goal? " );
-                    string userPoints = Console.ReadLine();
-                    int points = int.Parse(userPoints);
+                    string userPoints2 = Console.ReadLine();
+                    int points2 = int.Parse(userPoints2);
 
                     
                 }
@@ -56,19 +56,19 @@ class Program
                     ChecklistGoal checklistGoal = new ChecklistGoal("attend the temple", "perform ordinances", "50", 5, 100 );
 
                     Console.Write("What is the name of your goal? ");
-                    string userNameInput1 = Console.ReadLine();
+                    string userNameInput3 = Console.ReadLine();
                     Console.Write("What is a short description of it? ");
-                    string userDesInput = Console.ReadLine();
+                    string userDesInput3 = Console.ReadLine();
                     Console.Write("How many points is associated to this goal? " );
-                    string userPoints = Console.ReadLine();
-                    int points = int.Parse(userPoints);
+                    string userPoints3 = Console.ReadLine();
+                    int points3 = int.Parse(userPoints3);
                     Console.Write("How many times does this goal need to be accomplished to attract a bonus? ");
 
                     string timesForBonus = Console.ReadLine();
-                    int timesBonus = int.Parse(userPoints);
+                    int timesBonus = int.Parse(userPoints3);
                     Console.Write("What is the bonus for accomplishing it that many times? ");
                     string userBonus = Console.ReadLine();
-                    int bonus = int.Parse(userPoints);
+                    int bonus = int.Parse(userPoints3);
 
                     
                 }
