@@ -14,6 +14,40 @@ public class Address
             _country = country;
 
         }
+         public string GetStreet()
+         {
+            return _street;
+         }
+         public string GetCity()
+         {
+            return _city;
+
+         }
+         public string GetState()
+         {
+            return _state;
+         }
+         public string GetCountry()
+         {
+            return _country;
+         }
+         public void SetStreet(string street )
+         {
+            _street  = street;
+         }
+         public void SetCity(string city)
+         {
+            _city = city;
+         }
+         public void SetState(string state)
+         {
+            _state  = state;
+         }
+         public void SetCountry(string country)
+         {
+            _country = country;
+
+         }
          public string DisplayAddress()
          {
             string address = $"Street Name: {_street}, \n City: {_city} \n State/Province: {_state} \n Country: {_country}";
