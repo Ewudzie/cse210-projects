@@ -15,8 +15,8 @@ class Program
 
         VideoEntry videoEntry2= new VideoEntry();
         videoEntry2._videoTitle = "Ribbinson Family";
-        videoEntry1._videoAuthor = "Derrick Path";
-        videoEntry1._videoLenght = 1563;
+        videoEntry2._videoAuthor = "Derrick Path";
+        videoEntry2._videoLenght = 1563;
 
         VideoEntry videoEntry3 = new VideoEntry();
         videoEntry3._videoTitle = "The Rails";
