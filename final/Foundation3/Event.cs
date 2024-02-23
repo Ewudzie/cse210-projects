@@ -14,6 +14,14 @@ public abstract class Event
         {
 
         }
+        public Event(string title, string description, string date, string time)
+        {
+            _title = title;
+            _description = description;
+            _date = date;
+            _time = time;
+
+        }
 
         public Event (string title, string description, string date, string time, Address address)
         {
