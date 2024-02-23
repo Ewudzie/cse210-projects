@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 using System.Security.Cryptography.X509Certificates;
 
 public abstract class Event
@@ -14,12 +15,13 @@ public abstract class Event
 
         }
 
-        public Event (string title, string description, string date, string time)
+        public Event (string title, string description, string date, string time, Address address)
         {
             _title = title;
             _description = description;
             _date = date;
             _time = time;
+            _address = address;
 
         }
 
@@ -38,6 +40,14 @@ public abstract class Event
         public string GetTime()
         {
             return _time;
+        }
+        public Address GetAddress()
+        {
+            return _address;
+        }
+        public void SetAddress(Address address)
+        {
+            _address = address;
         }
         public void SetTitle(string title)
         {

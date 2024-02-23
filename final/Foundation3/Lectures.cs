@@ -5,7 +5,12 @@ public class Lectures:Event
     public string _speaker;
     public int _capacity;
 
-        public Lectures (string title, string description, string date, string time, string speaker, int capacity):base(title, description, date, time)
+        public Lectures()
+        {
+            
+        }
+
+        public Lectures (string title, string description, string date, string time, string speaker, int capacity, Address address):base(title, description, date, time, address)
 
         {
             _speaker = speaker;
@@ -28,7 +33,7 @@ public class Lectures:Event
 
     public override string GetDetails()
     {
-        return $"Event Title: {_title} \n Description: {_description} \n Date: {_date} \n Time: {_time} \n Sepeaker: {_speaker} \n Capacity: {_capacity}";
+        return $"Event Title: {_title} \n Description: {_description} \n Date: {_date} \n Time: {_time} \n Address: {_address}\n Sepeaker: {_speaker} \n Capacity: {_capacity}";
     }
     /*public override string GetShortDescription()
     {

@@ -4,7 +4,12 @@ public class OutdoorGatherings:Event
 {
     public string _weather;
 
-        public OutdoorGatherings(string title, string description, string date, string time, string weather):base(title, description, date, time)
+        public OutdoorGatherings()
+        {
+            
+        }
+
+        public OutdoorGatherings(string title, string description, string date, string time, Address address, string weather):base(title, description, date, time, address)
         {
             _weather = weather;
 
