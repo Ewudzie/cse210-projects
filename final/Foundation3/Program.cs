@@ -27,6 +27,7 @@ class Program
         foreach(Event e in events)
         {
             string details = e.GetDetails();
+            Console.WriteLine();
             Console.WriteLine($"The event detials are: {details}");
 
         }
